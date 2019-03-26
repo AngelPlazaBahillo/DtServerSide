@@ -1,4 +1,9 @@
 services:
+    app.twig_extension:
+      class: AngelPlaza\DatatablesServerSideBundle\Twig\Extensions\PrintTableTwigExtension
+      public: false
+      tags:
+        - { name: twig.extension }
 #    angel_plaza_datatables_server_side.example:
 #        class: AngelPlaza\DatatablesServerSideBundle\Example
 #        arguments: [@service_id, "plain_value", %parameter%]
