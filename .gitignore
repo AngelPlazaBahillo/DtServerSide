@@ -1,0 +1,9 @@
+/app/
+/bin/
+/src/AppBundle
+/src/Test
+/vendor/
+/web/
+/build/
+/composer.phar
+README.md
