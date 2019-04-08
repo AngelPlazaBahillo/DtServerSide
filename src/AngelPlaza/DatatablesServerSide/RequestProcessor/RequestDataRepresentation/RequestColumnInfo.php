@@ -1,6 +1,7 @@
 <?php
 
-namespace AngelPlaza\DatatablesServerSideBundle\RequestProcessor\RequestDataRepresentation;
+namespace AngelPlaza\DatatablesServerSide\RequestProcessor\RequestDataRepresentation;
+use AngelPlaza\DatatablesServerSide\RequestProcessor\PostRequestInterface;
 use Symfony\Component\HttpFoundation\Request;
 
 class RequestColumnInfo {
@@ -79,7 +80,8 @@ class RequestColumnInfo {
     }
 
     /**
-     * @param Request $request
+     * @param PostRequestInterface $request
+     * TODO Eliminar la restricción del tipo cuando se le pueda integrar al Request de Symfony la interfaz
      * @return RequestColumnInfo[]|null
      */
     public static function buildFromRequest(Request $request) {

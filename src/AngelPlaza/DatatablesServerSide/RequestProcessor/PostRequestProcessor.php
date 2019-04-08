@@ -1,8 +1,8 @@
 <?php
 
-namespace AngelPlaza\DatatablesServerSideBundle\RequestProcessor;
+namespace AngelPlaza\DatatablesServerSide\RequestProcessor;
 
-use AngelPlaza\DatatablesServerSideBundle\RequestProcessor\RequestDataRepresentation\RequestColumnInfo;
+use AngelPlaza\DatatablesServerSide\RequestProcessor\RequestDataRepresentation\RequestColumnInfo;
 use Symfony\Component\HttpFoundation\Request;
 
 class PostRequestProcessor {
@@ -24,11 +24,19 @@ class PostRequestProcessor {
 
     private $columns;
 
+    /**
+     * @param PostRequestInterface $request
+     * TODO Eliminar la restricción del tipo cuando se le pueda integrar al Request de Symfony la interfaz
+     */
     public function __construct(Request $request) {
 //        $this->request = $request;
         $this->processServerSideRequest($request);
     }
 
+    /**
+     * @param PostRequestInterface $request
+     * TODO Eliminar la restricción del tipo cuando se le pueda integrar al Request de Symfony la interfaz
+     */
     protected function processServerSideRequest(Request $request) {
         $postSearch = $request->get('search');
 

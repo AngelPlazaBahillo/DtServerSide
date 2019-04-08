@@ -9,7 +9,7 @@
 namespace AngelPlaza\DatatablesServerSideBundle\Twig\Extensions;
 
 
-use AngelPlaza\DatatablesServerSideBundle\Tables\DatatablesTable;
+use AngelPlaza\DatatablesServerSide\Tables\DatatablesTable;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

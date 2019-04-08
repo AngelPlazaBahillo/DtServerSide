@@ -1,6 +1,6 @@
 <?php
 
-namespace AngelPlaza\DatatablesServerSideBundle\Tables;
+namespace AngelPlaza\DatatablesServerSide\Tables;
 
 class DatatablesField {
 
